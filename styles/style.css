@@ -256,16 +256,13 @@
 }
 
 .like-icon {
+  max-inline-size: 39px;
+  max-block-size: 38px;
   margin-inline-start: -2px;
 }
 
 .sparks {
   opacity: 0;
-}
-
-.like-icon {
-  max-inline-size: 39px;
-  max-block-size: 38px;
 }
 
 .card__like-button {
