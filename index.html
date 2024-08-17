@@ -12,52 +12,33 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml"/>
+    <link rel="apple-touch-icon" href="./images/favicon.png">
   </head>
   <body class="page">
-    <header class="header limit">
-      <article class="header__card">
-        <h1 class="header__title">&lt;/HTML&gt;</h1>
-        <h2 class="header__subtitle">закрывающий тег</h2>
+    <header class="limit">
+      <div class="header">
+        <a class="header__logo">&lt;/HTML&gt;</a>
+        <h1 class="header__title">закрывающий тег</h1>
         <nav class="theme-menu header__theme-menu">
           <ul class="theme-menu__list">
             <li class="theme-menu__item">
-              <button
-                type="button"
-                data-theme="dark"
-                class="theme-menu__button"
-              >
-                Темно
-              </button>
+              <button type="button" data-theme="dark" class="theme-menu__button">Темно</button>
             </li>
             <li class="theme-menu__item">
-              <button
-                type="button"
-                data-theme="auto"
-                disabled
-                class="theme-menu__button"
-              >
-                Авто
-              </button>
+              <button type="button" data-theme="auto" class="theme-menu__button">Авто</button>
             </li>
             <li class="theme-menu__item">
-              <button
-                type="button"
-                data-theme="light"
-                class="theme-menu__button"
-              >
-                Светло
-              </button>
+              <button type="button" data-theme="light" class="theme-menu__button">Светло</button>
             </li>
           </ul>
         </nav>
-      </article>
+      </div>
     </header>
     <main class="main limit">
       <section class="card">
-        <h3 class="card__title">
-          Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="card__container">
           <img
             src="./images/mirror.png"
@@ -65,7 +46,7 @@
             class="card__container-image filter_0"
             loading="lazy"
           />
-          <p class="card__container-text">Хто я?</p>
+          <span class="card__container-text">Хто я?</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -88,7 +69,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -122,7 +102,7 @@
         </div>
       </section>
       <section class="card">
-        <h3 class="card__title">1 спринт: Я — чистый лист</h3>
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__container">
           <img
             src="./images/sweaty.png"
@@ -130,7 +110,7 @@
             class="card__container-image filter_1"
             loading="lazy"
           />
-          <p class="card__container-text">Бери и делай</p>
+          <span class="card__container-text">Бери и делай</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -154,7 +134,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -188,7 +167,7 @@
         </div>
       </section>
       <section class="card">
-        <h3 class="card__title">1 спринт: А если не получится?</h3>
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__container">
           <img
             src="./images/Galochka.png"
@@ -196,7 +175,7 @@
             class="card__container-image filter_2"
             loading="lazy"
           />
-          <p class="card__container-text">Не дать заднюю</p>
+          <span class="card__container-text">Не дать заднюю</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -218,7 +197,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -252,7 +230,7 @@
         </div>
       </section>
       <section class="card">
-        <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__container">
           <img
             src="./images/garbage.png"
@@ -260,7 +238,7 @@
             class="card__container-image filter_3"
             loading="lazy"
           />
-          <p class="card__container-text">Я не плачу, это дощ</p>
+          <span class="card__container-text">Я не плачу, это дощ</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -283,7 +261,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -317,7 +294,7 @@
         </div>
       </section>
       <section class="card">
-        <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__container">
           <img
             src="./images/cats.png"
@@ -325,7 +302,7 @@
             class="card__container-image filter_4"
             loading="lazy"
           />
-          <p class="card__container-text">Спасибо тебе</p>
+          <span class="card__container-text">Спасибо тебе</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -349,7 +326,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -383,7 +359,7 @@
         </div>
       </section>
       <section class="card">
-        <h3 class="card__title">3 спринт: Обходные стратегии</h3>
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__container">
           <img
             src="./images/rats.png"
@@ -391,7 +367,7 @@
             class="card__container-image filter_5"
             loading="lazy"
           />
-          <p class="card__container-text">Не гноби себя</p>
+          <span class="card__container-text">Не гноби себя</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -414,7 +390,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -448,7 +423,7 @@
         </div>
       </section>
       <section class="card">
-        <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__container">
           <img
             src="./images/mindset.png"
@@ -456,7 +431,7 @@
             class="card__container-image filter_6"
             loading="lazy"
           />
-          <p class="card__container-text">Осознанность</p>
+          <span class="card__container-text">Осознанность</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -482,7 +457,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -516,7 +490,7 @@
         </div>
       </section>
       <section class="card">
-        <h3 class="card__title">«Сейчас я здесь»</h3>
+        <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__container">
           <img
             src="./images/Harold.png"
@@ -524,7 +498,7 @@
             class="card__container-image filter_7"
             loading="lazy"
           />
-          <p class="card__container-text">Живём живём</p>
+          <span class="card__container-text">Живём живём</span>
         </div>
         <article class="card__text">
           <p class="card__text-paragraph">
@@ -550,7 +524,6 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              alt="Иконка сердечка"
               class="like-icon"
               aria-hidden="true"
             >
@@ -583,52 +556,43 @@
           </button>
         </div>
       </section>
-    </main>
-    <footer class="footer">
       <button
-        class="footer__button repeat__button"
+        class="save-button repeat__button"
         type="button"
         onclick="window['save-button'].showModal();"
         aria-controls="save-button"
       >
         <svg
-          width="39"
+           width="39"
           height="39"
           viewBox="0 0 39 39"
           aria-hidden="true"
-          alt="Иконка дискеты"
-          class="footer__button-image"
+          class="save-button__image"
         >
-          <use href="./svg/floppy.svg#floppy" />
+          <use href="./svg/floppy.svg#floppy"/>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="save-button__text button__text">Сохранить на память</span>
       </button>
       <dialog id="save-button" class="dialog">
-        <div class="dialog__leading">
+        <div class="dialog__description">
           <svg
             width="39"
             height="39"
             viewBox="0 0 39 39"
             aria-hidden="true"
-            alt="Иконка дискеты"
-            class="dialog__leading-image"
+            class="dialog__description-image"
           >
-            <use href="./svg/floppy.svg#floppy" />
+            <use href="./svg/floppy.svg#floppy"/>
           </svg>
-          <span class="dialog__leading-text"
-            >Вставьте дискету, чтобы продолжить</span
-          >
+          <span class="dialog__description-text">Вставьте дискету, чтобы продолжить</span>
         </div>
         <form method="dialog" class="dialog__button">
-          <button
-            class="dialog__button-close repeat__button"
-            onclick="window['save-button'].close();"
-          >
+          <button class="dialog__button-close repeat__button" onclick="window['save-button'].close();">
             <span class="button__text">Ok</span>
           </button>
         </form>
       </dialog>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

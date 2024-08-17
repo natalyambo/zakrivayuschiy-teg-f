@@ -12,3 +12,104 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes arrow-move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes big-heart {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.15;
+  }
+}
+
+@keyframes sparks-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.core {
+  fill: var(--background-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:hover .core {
+  fill: var(--fill-contour-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--fill-solid-color);
+  transition: fill 0.3s linear;
+}
+
+.main-body {
+  fill: var(--background-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--fill-contour-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--fill-solid-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.contour {
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--fill-solid-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--fill-solid-color);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--fill-solid-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon:not(.is-liked) .contour {
+  fill: var(--fill-contour-color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation: big-heart;
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  fill: var(--fill-solid-color);
+  animation-name: sparks-appear;
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
